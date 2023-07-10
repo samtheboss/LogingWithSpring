@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LoginWIthSpringApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(LoginWIthSpringApplication.class, args);
     }
 

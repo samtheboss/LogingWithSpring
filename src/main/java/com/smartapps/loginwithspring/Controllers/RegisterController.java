@@ -10,11 +10,12 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("api/v1")
 public class RegisterController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/register-user")
+    @PostMapping("/user/register-users")
     public ResponseEntity saveDepartment(@RequestBody User users) throws IllegalAccessException {
         User u = new User();
 
